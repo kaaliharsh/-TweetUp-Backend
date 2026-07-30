@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="card">
+
+    <div class="card-header">
+
+        <h3>Create Tweet</h3>
+
+    </div>
+
+    <div class="card-body">
+
+        <form id="tweetForm">
+
+            <div class="mb-3">
+
+                <label>
+                    Tweet Text
+                </label>
+
+                <textarea
+                    class="form-control"
+                    id="tweetText"
+                    rows="4"
+                    required>
+                </textarea>
+
+            </div>
+
+            <div class="mb-3">
+
+                <label>
+                    Image
+                </label>
+
+                <input
+                    type="file"
+                    id="tweetPhoto"
+                    class="form-control">
+
+            </div>
+
+            <button
+                class="btn btn-primary"
+                type="submit">
+
+                Post Tweet
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+{% endblock %}

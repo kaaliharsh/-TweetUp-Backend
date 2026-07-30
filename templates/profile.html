@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="card">
+
+    <div class="card-body text-center">
+
+        <img
+            id="profilePicture"
+            src=""
+            width="150"
+            height="150"
+            class="rounded-circle mb-3">
+
+        <h3 id="username"></h3>
+
+        <p id="bio"></p>
+
+        <div class="row">
+
+            <div class="col">
+
+                <h5 id="followers"></h5>
+
+                <p>Followers</p>
+
+            </div>
+
+            <div class="col">
+
+                <h5 id="following"></h5>
+
+                <p>Following</p>
+
+            </div>
+
+        </div>
+
+        <a
+            href="/edit-profile-page/"
+            class="btn btn-primary">
+
+            Edit Profile
+
+        </a>
+
+    </div>
+
+</div>
+
+{% endblock %}

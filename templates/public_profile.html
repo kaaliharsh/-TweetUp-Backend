@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="card">
+
+    <div class="card-body text-center">
+
+        <img
+            id="publicProfilePicture"
+            width="150"
+            height="150"
+            class="rounded-circle mb-3">
+
+        <h3 id="publicUsername"></h3>
+
+        <p id="publicBio"></p>
+
+        <h5>
+
+            Followers:
+            <span id="publicFollowers"></span>
+
+        </h5>
+
+        <h5>
+
+            Following:
+            <span id="publicFollowing"></span>
+
+        </h5>
+
+       <button
+
+    id="followButton"
+
+    class="btn btn-primary">
+
+    Follow
+
+</button>
+
+<button
+
+    id="unfollowButton"
+
+    class="btn btn-danger ms-2">
+
+    Unfollow
+
+</button>
+
+    </div>
+
+</div>
+
+{% endblock %}
